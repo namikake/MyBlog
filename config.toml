@@ -1,0 +1,69 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+
+paginate = "10" # Number of posts per page
+
+title = "My New Hugo Site"
+theme = "mainroad"
+
+disqusShortname = "" # Enable Disqus comments by entering your Disqus shortname
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+
+
+#[Author] # Used in authorbox
+#  name = "John Doe"
+#  bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+#  avatar = "img/avatar.png"
+
+[Params]
+  subtitle = "サイトの説明" # Subtitle of your site. Used in site header
+  description = "サイトの説明 ブログの用途 説明とか" # Site description. Used in meta description
+  copyright = "サイトのコピーライト名前？" # Footer copyright holder, otherwise will use site title
+  opengraph = true # Enable OpenGraph if true オープングラフ true
+  twitter_cards = true # Enable Twitter Cards if true ツイッターのカード
+  readmore = false # Show "Read more" button in list if true　read moreボタン
+  authorbox = false # Show authorbox at bottom of pages if true　autherboxのtf
+  toc = true # Enable Table of Contents 記事の目次
+  post_navigation = true # Show post navigation at bottom of pages if true ナビゲーション
+  post_meta = ["date", "categories", "translations"] # Order of post meta information　メタタグ？
+  mainSections = ["post", "blog", "news"] # Specify section pages to show on "Recent articles"
+  dateformat = "2006-01-02" # Change the format of dates　日付フォーマット
+  mathjax = true # Enable MathJax　数式表示用
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  highlightColor = "#77EEFF	" # Override highlight color
+  customCSS = ["css/custom.css"] # Include custom CSS files
+  customJS = ["js/custom.js"] # Include custom JS files
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "left"  # Configure layout for list pages
+  single = false # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget
+
+[Params.widgets.social]
+  # Enable parts of social widget ソーシャルwidgets
+  #facebook = "username"
+  #twitter = "username"
+  #instagram = "username"
+  #linkedin = "username"
+  #telegram = "username"
+  #github = "username"
+  #gitlab = "username"
+  #bitbucket = "username"
+  #email = "example@example.com"
+
+# Custom social links youtubeのアカウントがあればここに載せられる
+#[[Params.widgets.social.custom]]
+#  title = "Youtube"
+#  url = "https://youtube.com/user/username"
+#  icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
+
+#[[Params.widgets.social.custom]] ここも同じ
+#  title = "My Home Page"
+#  url = "http://example.com"
